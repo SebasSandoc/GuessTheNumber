@@ -39,11 +39,29 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:background="@color/white"
-        android:textColor="@color/black"
-        android:textSize="30sp"
         android:padding="8sp"
         android:text="Tap on generate to start"
+        android:textColor="@color/black"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+    <Button
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Down"
+        app:layout_constraintTop_toBottomOf="@+id/guessings"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Button"
+        app:layout_constraintTop_toBottomOf="@+id/guessings"
+        tools:layout_editor_absoluteX="284dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
