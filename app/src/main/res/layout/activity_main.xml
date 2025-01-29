@@ -51,17 +51,49 @@
         android:id="@+id/down"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
+        android:backgroundTint="@color/mustard"
         android:text="Down"
-        app:layout_constraintTop_toBottomOf="@+id/guessings"
-        tools:layout_editor_absoluteX="37dp" />
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessings" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Button"
-        app:layout_constraintTop_toBottomOf="@+id/guessings"
-        tools:layout_editor_absoluteX="284dp" />
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/mustard"
+        android:textColor="@color/black"
+        android:text="Up"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessings" />
+
+    <Button
+        android:id="@+id/generate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/orange"
+        android:text="Generate"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/down" />
+
+    <Button
+        android:id="@+id/guessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/teal_700"
+        android:text="Guessed"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/generate" />
 </androidx.constraintlayout.widget.ConstraintLayout>
